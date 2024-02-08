@@ -1,0 +1,122 @@
+
+.box-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+}
+.box-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+    /* Additional styling for each face */
+}
+.front { background-color: #FF6347; }
+.left { background-color: #4169E1; }
+.right { background-color: #32CD32; }
+.top { background-color: #FF6347; }
+.down { background-color: #4169E1; }
+.oposit { background-color: #32CD32; }
+
+
+
+/*
+
+@font-face {
+    font-family: "Josefin Slab";
+    src: url(fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf);
+}
+    
+
+html {
+    font-family: "Josefin Slab";
+    margin: 0; 
+}
+
+body {
+    display: flexbox;
+    margin: 0; 
+}
+
+
+p {
+    color: #3E33AA;
+}
+
+h2 {
+    color: white;
+    font-size: 2rem; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+header {
+    padding: 60px;
+    text-align: center;
+    background: #EAE0D7;
+    color: white;
+}
+
+Sobre
+
+.sobre {
+    padding: 50px;
+    background-color: #3E33AA;
+}
+
+.box-content {
+    display: inline-flex;
+    justify-content: center;
+    background-image: linear-gradient(45deg, #ffffff 8.33%, #3e33aa 8.33%, #3e33aa 50%, #ffffff 50%, #ffffff 58.33%, #3e33aa 58.33%, #3e33aa 100%);
+    background-size: 8.49px 8.49px;
+    padding: 20px;
+    border-top: thick solid white; 
+}
+
+.text{
+    background-color: #EAE0D7;
+    padding: 50px;
+    width: 1fr;
+    font-size: 1.5rem;
+}
+
+
+#sobre1 {
+    display: inline;
+    margin: 0rem;
+}
+
+Fulanos
+
+.fulanos {
+    margin: 0rem;
+    padding: 0rem;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+    background-color: #A3B091;
+    padding: 50px;
+}
+
+.box-image {
+    display: inline-flex;
+    justify-content: center;
+    background-image: linear-gradient(45deg, #ffffff 8.33%, #A3B091 8.33%, #A3B091 50%, #ffffff 50%, #ffffff 58.33%, #A3B091 58.33%, #A3B091 100%);
+    background-size: 8.49px 8.49px;
+    padding: 20px;
+    border-top: thick solid white; 
+}
+
+Processo
+.video {
+    margin: 0rem;
+    padding: 0rem;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+    background-color: #3E33AA;
+    padding: 50px;
+}
+/*
