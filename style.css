@@ -1,41 +1,17 @@
-
-.box-container {
-    position: relative;
-    width: 800px;
-    height: 600px;
-}
-.box-face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: opacity 0.5s ease-in-out;
-    /* Additional styling for each face */
-}
-.front { background-color: #FF6347; }
-.left { background-color: #4169E1; }
-.right { background-color: #32CD32; }
-.top { background-color: #FF6347; }
-.down { background-color: #4169E1; }
-.oposit { background-color: #32CD32; }
-
-
-
-/*
-
 @font-face {
     font-family: "Josefin Slab";
     src: url(fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf);
 }
-    
+
 
 html {
     font-family: "Josefin Slab";
-    margin: 0; 
+    margin: 0;
 }
 
 body {
     display: flexbox;
-    margin: 0; 
+    margin: 0;
 }
 
 
@@ -45,7 +21,7 @@ p {
 
 h2 {
     color: white;
-    font-size: 2rem; 
+    font-size: 2rem;
 }
 
 nav {
@@ -61,7 +37,7 @@ header {
     color: white;
 }
 
-Sobre
+/* Sobre */
 
 .sobre {
     padding: 50px;
@@ -74,10 +50,10 @@ Sobre
     background-image: linear-gradient(45deg, #ffffff 8.33%, #3e33aa 8.33%, #3e33aa 50%, #ffffff 50%, #ffffff 58.33%, #3e33aa 58.33%, #3e33aa 100%);
     background-size: 8.49px 8.49px;
     padding: 20px;
-    border-top: thick solid white; 
+    border-top: thick solid white;
 }
 
-.text{
+.text {
     background-color: #EAE0D7;
     padding: 50px;
     width: 1fr;
@@ -90,7 +66,7 @@ Sobre
     margin: 0rem;
 }
 
-Fulanos
+/* Fulanos */
 
 .fulanos {
     margin: 0rem;
@@ -107,10 +83,10 @@ Fulanos
     background-image: linear-gradient(45deg, #ffffff 8.33%, #A3B091 8.33%, #A3B091 50%, #ffffff 50%, #ffffff 58.33%, #A3B091 58.33%, #A3B091 100%);
     background-size: 8.49px 8.49px;
     padding: 20px;
-    border-top: thick solid white; 
+    border-top: thick solid white;
 }
 
-Processo
+/* Processo */
 .video {
     margin: 0rem;
     padding: 0rem;
@@ -119,4 +95,73 @@ Processo
     background-color: #3E33AA;
     padding: 50px;
 }
-/*
+
+
+
+
+.mosaic {
+    position: relative;
+    width: 400px;
+    /* Set desired width */
+    height: 400px;
+    /* Set desired height */
+}
+
+
+.quarter {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+}
+
+
+.quarter img {
+    width: 200%;
+    /* Double the width and height to show only 1/4 of the image */
+    height: 200%;
+}
+
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+
+.top-left img {
+    transform: translate(0%, 0%);
+}
+
+
+.top-right {
+    top: 0;
+    right: 0;
+}
+
+
+.top-right img {
+    transform: translate(-50%, 0%);
+}
+
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+
+.bottom-left img {
+    transform: translate(0%, -50%);
+}
+
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+
+.bottom-right img {
+    transform: translate(-50%, -50%);
+}

@@ -1,120 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>Rua Fulano de Tal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Rua Fulano de Tal</title>
 </head>
 
 
 <body>
-  <div class="box-container">
-      <div id="front" class="box-face front"></div>
-      <div id="left" class="box-face left"></div>
-      <div id="right" class="box-face right"></div>
-      <div id="top" class="box-face top"></div>
-      <div id="down" class="box-face down"></div>
-      <div id="opost" class="box-face opost"></div>
-      <!-- Add other faces as needed -->
-  </div>
-
+  <!-- Navigation Bar  -->
   <nav>
-      <a href="#front">Front</a>
-      <a href="#left">Left</a>
-      <a href="#right">Right</a>
-      <a href="#top">Front</a>
-      <a href="#down">Left</a>
-      <a href="#opost">Right</a>
-      <!-- Add links for other faces -->
+    <a href="#linksobre">Sobre</a>
+    <a href="#linkfulanos">Fulanos</a>
+    <a href="#linkvideo">Video</a>
+    <a href="#linkequipe">Equipe</a>
+    <a href="#linkfooter">Contato</a>
   </nav>
 
-  <script>
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-          anchor.addEventListener('click', function (e) {
-              e.preventDefault();
-              const targetId = this.getAttribute('href').substring(1);
-              showFace(targetId);
-          });
-      });
+  <!-- Header  -->
 
-      function showFace(faceId) {
-          const faces = document.querySelectorAll('.box-face');
-          faces.forEach(face => {
-              if (face.id === faceId) {
-                  face.style.opacity = 1;
-              } else {
-                  face.style.opacity = 0;
-              }
-          });
-      }
-  </script>
-</body>
-</body>
-</html>
+  <header>
+    <figure><img src="images_logo/logo_png_azul.png" alt="Rua Fulano de Tal Logo"> </figure>
+  </header>
 
-
-
-
-
-
-
-
-<!-- <body>
-     Navigation Bar 
-    <nav>
-        <a href="#linksobre">Sobre</a>
-        <a href="#linkfulanos">Fulanos</a>
-        <a href="#linkvideo">Video</a>
-        <a href="#linkequipe">Equipe</a>
-        <a href="#linkfooter">Contato</a>
-    </nav>
-
-       Header 
-
-    <header>
-      <figure><img src="images_logo/logo_png_azul.png" alt="Rua Fulano de Tal Logo"> </figure>
-    </header>
-
-   Content 
-    <main>
-      <section class="sobre" id="linksobre">
-        <h2>Sobre</h2>
-        <article class="box-content">
-          <div class="text">
+  <!-- Content  -->
+  <main>
+    <section class="sobre" id="linksobre">
+      <h2>Sobre</h2>
+      <article class="box-content">
+        <div class="text">
           <p><span>Rua Fulano de Tal</span> é um projeto com scanner e vizinhos.</p>
-          <p>Ele é baseado em visitar todos os vizinhos da rua (e passar pela própria casa) batendo papo sobre a relação dos moradores com o espaço, suas histórias e as ideias em torno da nomeação da rua. Afinal, quem seria o tal Doutor Fulano de Tal que está nas placas e nos documentos de todos nós? </p> 
-         <p>Além ém da conversa, retratos dos moradores foram tirados com um scanner adaptado, trazendo assim discussões a cerca do tempo e de processos de documentação. Optou-se pelo scanner porque esse dispositivo enfatiza a percepção do tempo enquanto duração e fluxo, evidenciando-se assim processos. Quando ele opera sua varredura, acaba por trazer a percepção contínua do tempo, como se o tempo fosse o espaço em movimento,  diferenciando-se assim da fotografia e ligando-se aos moradores e à própria rua. Afinal, nesse caminho, nos deparamos com indivíduos que estão em constante transformação. Para além de documentos sobre a rua, cada morador é um processo de construção que se deu, se dá e continua “se dando”, assim como a rua, que semana passada mesmo ganhou um novo morador ali perto da esquina e, há uns três meses, uma nova árvore na frente da garagem da vizinha da frente.</p> 
-          </div>
-          <div class="image">
+          <p>Ele é baseado em visitar todos os vizinhos da rua (e passar pela própria casa) batendo papo sobre a relação
+            dos moradores com o espaço, suas histórias e as ideias em torno da nomeação da rua. Afinal, quem seria o tal
+            Doutor Fulano de Tal que está nas placas e nos documentos de todos nós? </p>
+          <p>Além ém da conversa, retratos dos moradores foram tirados com um scanner adaptado, trazendo assim
+            discussões a cerca do tempo e de processos de documentação. Optou-se pelo scanner porque esse dispositivo
+            enfatiza a percepção do tempo enquanto duração e fluxo, evidenciando-se assim processos. Quando ele opera
+            sua varredura, acaba por trazer a percepção contínua do tempo, como se o tempo fosse o espaço em movimento,
+            diferenciando-se assim da fotografia e ligando-se aos moradores e à própria rua. Afinal, nesse caminho, nos
+            deparamos com indivíduos que estão em constante transformação. Para além de documentos sobre a rua, cada
+            morador é um processo de construção que se deu, se dá e continua “se dando”, assim como a rua, que semana
+            passada mesmo ganhou um novo morador ali perto da esquina e, há uns três meses, uma nova árvore na frente da
+            garagem da vizinha da frente.</p>
+        </div>
+        <div class="image">
           <figure id="sobre1"><img src="images_logo/Sobre1.png"></figure>
         </div>
-        </article>
-      </section>
+      </article>
+    </section>
 
 
-      <section class="fulanos" id="linkfulanos">
-        <h2>Fulanos</h2>
+    <section class="fulanos" id="linkfulanos">
+      <h2>Fulanos</h2>
 
-        <article class="box-image">
-         
-        </article>
-      </section>
+      <article class="box-image">
 
-      <section class="video" id="linkvideo">
-        <h2>Video</h2>
-      </section>
 
-      <section id="linkequipe">
-        <h2>Equipe</h2>
-      </section>
+        <div class="mosaic">
+
+          <div class="quarter top-left">
+            <img class="clickableImage" src="image1.jpg">
+          </div>
+          <div class="quarter top-right"><img class="clickableImage" src="image2.jpg"></div>
+          <div class="quarter bottom-left"><img class="clickableImage" src="image3.jpg"></div>
+          <div class="quarter bottom-right"><img class="clickableImage" src="image4.jpg"></div>
+        </div>
+
+      </article>
+    </section>
+
+    <section class="video" id="linkvideo">
+      <h2>Video</h2>
+    </section>
+
+    <section id="linkequipe">
+      <h2>Equipe</h2>
+    </section>
   </main>
 
 
- Footer 
-<footer id="linkfooter">
-  <h2>Contato</h2>
-</footer>
-</body>
+  <!-- Footer  -->
+  <footer id="linkfooter">
+    <h2>Contato</h2>
+  </footer>
 
--->
+
+  <script src="index.js"></script>
+</body>
