@@ -24,6 +24,10 @@ p {
     color: #3E33AA;
 }
 
+h1 {
+    color: #3E33AA;
+}
+
 h2 {
     color: white;
     font-size: 2rem;
@@ -32,17 +36,51 @@ h2 {
 
 }
 
+/*nav*/
 nav {
     display: flex;
+    font-weight: bold;
+    font-size: 1.2rem;
     justify-content: space-around;
-    padding: 20px;
+    background-color: #f3efeb;
 }
 
+nav ul {
+    list-style-type: none;
+    justify-content: space-around;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 50px;
+    
+  }
+  
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #3E33AA; 
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  nav ul li a:hover {
+    color: #A3B091 ; 
+    border-bottom:  dashed #A3B091;
+  }
+
+
+
+/*header*/
 header {
     padding: 60px;
     text-align: center;
-    background: #EAE0D7;
-    color: white;
+    /*background: #EAE0D7;
+    color: white;*/
+    background-image: url("images_logo/banner.png");
+    background-size: cover;
+
 }
 
 /* Sobre */
@@ -186,7 +224,7 @@ header {
 }
 
 
-
+/*mosaic*/
 
 .mosaic {
     position: relative;
