@@ -10,10 +10,15 @@ html {
 }
 
 body {
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
     margin: 0;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
 
 p {
     color: #3E33AA;
@@ -22,6 +27,9 @@ p {
 h2 {
     color: white;
     font-size: 2rem;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+
 }
 
 nav {
@@ -42,6 +50,7 @@ header {
 .sobre {
     padding: 50px;
     background-color: #3E33AA;
+
 }
 
 .box-content {
@@ -56,15 +65,94 @@ header {
 .text {
     background-color: #EAE0D7;
     padding: 50px;
-    width: 1fr;
     font-size: 1.5rem;
-}
+    flex: 1.5;
+    max-height: 583px;
 
+}
 
 #sobre1 {
     display: inline;
     margin: 0rem;
 }
+
+#sobre2 {
+    display: inline;
+    margin: 0rem;
+}
+
+.sectiontitle {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0rem;
+}
+
+.slider {
+    overflow: hidden;
+    width: 80%;
+    display: flex;
+    background-image: linear-gradient(45deg, #ffffff 8.33%, #3e33aa 8.33%, #3e33aa 50%, #ffffff 50%, #ffffff 58.33%, #3e33aa 58.33%, #3e33aa 100%);
+    background-size: 8.49px 8.49px;
+    padding: 20px;
+    border-top: thick dashed white;
+    margin: auto;
+}
+
+.slide {
+    flex: 0 0 100%;
+    display: none;
+
+}
+
+.slide.active {
+    display: block;
+    display: inline-flex;
+}
+
+.buttons {
+    position: absolute;
+    
+   
+}
+
+
+
+.prev,
+.next {
+    position: absolute; 
+    background-color: #3E33AA;
+    border: none;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 30px;
+}
+
+.prev {
+    margin-top: 577px;
+}
+
+.next {
+    margin-top: 577px;
+    margin-left: 1020px;
+}
+
+.prev:hover,
+.next:hover
+ {
+    opacity: 0.6
+}
+
+*/ .image {
+    flex: 1;
+}
+
+.image img {
+    max-width: 100%;
+
+}
+
 
 /* Fulanos */
 
@@ -75,6 +163,7 @@ header {
     margin-block-end: 0rem;
     background-color: #A3B091;
     padding: 50px;
+    text-align: center;
 }
 
 .box-image {
