@@ -82,17 +82,48 @@ header {
 }
 
 /* Sobre */
-
 .sobre {
     padding: 50px;
     background-color: #3E33AA;
+    
+
+}
+
+.box-content-sobre {
+  
+
+    justify-content: center;
+    background-image: linear-gradient(45deg, #ffffff 8.33%, #3E33AA 8.33%, #3E33AA 50%, #ffffff 50%, #ffffff 58.33%, #3E33AA 58.33%, #3E33AA 100%);
+    background-size: 8.49px 8.49px;
+    padding: 20px;
+    border-top: thick dashed #f3efeb;
+    width: 80%;
+    margin: auto;
+    
+
+}
+
+.text_sobre {
+    background-color: #EAE0D7;
+    padding: 50px;
+    font-size: 1.5rem;
+    flex: 1.5;
+
+}
+
+
+/* Tutorial */
+
+.tutorial {
+    padding: 50px;
+    background-color: #EAE0D7;
 
 }
 
 .box-content {
     display: inline-flex;
     justify-content: center;
-    background-image: linear-gradient(45deg, #ffffff 8.33%, #3e33aa 8.33%, #3e33aa 50%, #ffffff 50%, #ffffff 58.33%, #3e33aa 58.33%, #3e33aa 100%);
+    background-image: linear-gradient(45deg, #ffffff 8.33%, #A3B091 8.33%, #A3B091 50%, #ffffff 50%, #ffffff 58.33%, #A3B091 58.33%, #A3B091 100%);
     background-size: 8.49px 8.49px;
     padding: 20px;
     border-top: thick solid #f3efeb;
@@ -107,18 +138,19 @@ header {
 
 }
 
-#sobre1 {
+#tut1 {
     display: inline;
     margin: 0rem;
 }
 
-#sobre2 {
+#tut2 {
     display: inline;
     margin: 0rem;
 }
 
 .sectiontitle {
     display: flex;
+    
     width: 80%;
     margin: auto;
     margin-bottom: 0rem;
@@ -128,7 +160,7 @@ header {
     overflow: hidden;
     width: 80%;
     display: flex;
-    background-image: linear-gradient(45deg, #ffffff 8.33%, #3e33aa 8.33%, #3e33aa 50%, #ffffff 50%, #ffffff 58.33%, #3e33aa 58.33%, #3e33aa 100%);
+    background-image: linear-gradient(45deg, #ffffff 8.33%, #A3B091 8.33%, #A3B091 50%, #ffffff 50%, #ffffff 58.33%, #A3B091 58.33%, #A3B091 100%);
     background-size: 8.49px 8.49px;
     padding: 20px;
     border-top: thick dashed #f3efeb;
@@ -314,6 +346,7 @@ header {
     background-image: linear-gradient(45deg, #ffffff 8.33%, #3E33AA 8.33%, #3E33AA 50%, #ffffff 50%, #ffffff 58.33%, #3E33AA 58.33%, #3E33AA 100%);
     background-size: 8.49px 8.49px;
     padding: 30px;
+    border-bottom: thick dashed #f3efeb;
   }
   
   
@@ -332,4 +365,13 @@ header {
     height: 100%;
     border: 0;
    
+  }
+
+  .sectiontitle_video {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+    padding-top: 20px;
+}
   }
